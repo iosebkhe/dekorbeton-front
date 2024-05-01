@@ -1,0 +1,33 @@
+.products {
+  padding-bottom: 8rem;
+}
+
+.title {
+  margin-bottom: 2.4rem;
+  margin-top: 4rem;
+}
+
+.title2 {
+  margin-top: 4rem;
+}
+
+.title__center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  column-gap: 2.4rem;
+  row-gap: 1.6rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .title2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,44 @@
+.navigation {
+  color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.link {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  color: var(--neutral-400);
+  padding: 0.8rem 1.6rem;
+  border-radius: 3rem;
+  border: 0.1rem solid var(--neutral-400);
+  transition: all 350ms;
+}
+
+.link:hover {
+  background-color: var(--primary-500);
+  color: var(--neutral-white);
+  border-color: var(--primary-500);
+}
+
+.active {
+  background-color: var(--primary-500);
+  color: var(--neutral-white);
+  border-color: var(--primary-500);
+}
+
+@media only screen and (max-width: 640px) {
+  .list {
+    flex-wrap: wrap;
+  }
+}

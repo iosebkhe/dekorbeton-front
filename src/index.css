@@ -1,0 +1,86 @@
+:root {
+  --primary-500: #07689F;
+  --neutral-100: #F9F9F9;
+  --neutral-200: #EFEFEF;
+  --neutral-300: #D9D9D9;
+  --neutral-400: #A6A6A6;
+  --neutral-500: #565656;
+  --neutral-black: #000000;
+  --neutral-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans Georgian Variable', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--neutral-100);
+  color: var(--neutral-black);
+  min-height: 100vh;
+}
+
+#root {
+  min-width: 32rem;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 164rem;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+a {
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 350ms;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+button {
+  font-family: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.header__social-icon {
+  transition: opacity 350ms;
+}
+
+.header__social-icon:hover {
+  opacity: 0.8;
+}
