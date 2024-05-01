@@ -10,7 +10,7 @@ export default function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/products`);
+        const response = await fetch(`https://dekorbeton-admin.vercel.app/api/products`);
         const data = await response.json();
         setProducts(data);
         setLoading(false);
