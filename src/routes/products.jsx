@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import productsStyles from "./products.module.css";
 import Loader from "../components/Loader";
@@ -22,6 +22,8 @@ export default function Products() {
 
     fetchData();
   }, []);
+
+
 
   const yalibebiProducts = products.filter(product => product.categories.some(category => category.name === "ყალიბები"));
   const masalebiProducts = products.filter(product => product.categories.some(category => category.name === "მასალები და ხელსაწყოები"));
@@ -53,7 +55,8 @@ export default function Products() {
                 />)}
             </div>
           </div>
-        </div>}
+        </div>
+      }
     </div>
   );
 }
