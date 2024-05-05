@@ -9,7 +9,13 @@ export default function Product({ product }) {
       </div>
       <div className={productStyles.content}>
         <h2 className={productStyles.title}>{product.title}</h2>
-        <p className={productStyles.price}>{product.price} ₾</p>
+        <p className={productStyles.price}>{
+          product.title === "ფერადი გამამკვრივებელი" ? 70
+            : product.title === "ფერადი გამყოფი ფხვნილი" ? 440
+              : product.title === "ლაქი - 1 პირი 20%" ? 640
+                : product.title === "ლაქი - 2 პირი 25%" ? 690
+                  : product.title === "ლაქი გლუვი" ? 710
+                    : product.price} ₾</p>
         <p className={productStyles.description}>{product.fullDescription}</p>
       </div>
     </div>

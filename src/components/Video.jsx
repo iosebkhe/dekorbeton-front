@@ -8,7 +8,7 @@ export default function Video() {
       </video>
       <span></span>
       <p className={videoStyles.video__text}>
-        დეკორატიული ბეჭდური ბეტონი <strong>Press Concrete</strong>
+        დეკორატიული ბეჭდური ბეტონი <strong>PRESBETON</strong>
       </p>
     </div>
   );

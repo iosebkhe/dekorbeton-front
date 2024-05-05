@@ -34,7 +34,9 @@ export default function ImageGallery() {
   return (<>
     <h2 className={imageGalleryStyles.title}>სურათების გალერეა</h2>
     <div className={imageGalleryStyles.grid}>
-      {images.map(image => <img className={imageGalleryStyles.img} key={image} src={image} alt="" />)}
+      {images.map(image => <div key={image} className={imageGalleryStyles.img__box}>
+        <img className={imageGalleryStyles.img} src={image} alt="" />
+      </div>)}
     </div>
   </>
   );
